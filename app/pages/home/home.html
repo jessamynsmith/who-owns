@@ -5,11 +5,21 @@
 </ion-header>
 
 <ion-content padding class="home">
+
   <ion-list inset>
     <ion-item>
       <ion-label class="bigger">Who owns</ion-label>
-      <ion-input type="text"></ion-input>
-      <button class="wide bigger" item-right>?</button>
+      <ion-input [(ngModel)]="brand" clearInput></ion-input>
+      <button class="wide bigger" item-right (click)="checkBrand()">?</button>
     </ion-item>
   </ion-list>
+
+  <br>
+
+  <ion-card>
+    <ion-card-content>
+      <div>{{owner}}</div>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
