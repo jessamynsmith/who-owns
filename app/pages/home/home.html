@@ -8,17 +8,19 @@
 
   <ion-list inset>
     <ion-item>
-      <ion-label class="bigger">Who owns</ion-label>
-      <ion-input [(ngModel)]="brand" clearInput></ion-input>
-      <button class="wide bigger" item-right (click)="checkBrand()">?</button>
+      <ion-label class="darker">Who owns</ion-label>
+      <ion-input [(ngModel)]="brandName" clearInput></ion-input>
+      <button class="wide darker" item-right (click)="checkBrand()">?</button>
     </ion-item>
   </ion-list>
 
   <br>
 
-  <ion-card>
+  <ion-card *ngIf="brandInfo">
     <ion-card-content>
-      <div>{{owner}}</div>
+      <p class="bigger">
+        {{brandInfo.name}} is owned by <span class="darker">{{brandInfo.owner}}</span>
+      </p>
     </ion-card-content>
   </ion-card>
 

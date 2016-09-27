@@ -18,11 +18,11 @@
   color: map-get($colors, dark);
 }
 
-.text-input {
+.text-input, .bigger {
   font-size: 2.0rem;
 }
 
-.toolbar-title, .bigger {
+.toolbar-title, .darker {
   font-weight: 600;
   font-size: 2.0rem;
 }
