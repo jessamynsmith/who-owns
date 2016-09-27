@@ -9,6 +9,8 @@
     "@angular/platform-browser-dynamic": "2.0.0-rc.4",
     "es6-shim": "0.35.1",
     "express": "^4.14.0",
+    "gulp": "3.9.1",
+    "gulp-watch": "4.3.5",
     "heroku-ssl-redirect": "0.0.3",
     "ionic-angular": "2.0.0-beta.11",
     "ionic-native": "1.3.10",
@@ -20,8 +22,6 @@
   },
   "devDependencies": {
     "del": "2.2.0",
-    "gulp": "3.9.1",
-    "gulp-watch": "4.3.5",
     "ionic-gulp-browserify-typescript": "2.0.0",
     "ionic-gulp-fonts-copy": "^1.0.0",
     "ionic-gulp-html-copy": "^1.0.0",
@@ -30,6 +30,9 @@
     "ionic-gulp-tslint": "^1.0.0",
     "tslint-ionic-rules": "0.0.4",
     "run-sequence": "1.1.5"
+  },
+  "scripts": {
+    "postinstall": "gulp build"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
@@ -47,6 +50,6 @@
       "locator": "ios"
     }
   ],
-  "name": "whoowns",
-  "description": "WhoOwns: An Ionic project"
+  "name": "WhoOwns",
+  "description": "WhoOwns: Find out who owns a brand"
 }

@@ -148,11 +148,13 @@ export class BrandData {
   }
 
   getOwner(brandName) {
-    var brand = null;
-    for (var i = 0; i < this.data.length; i++) {
-      if (brandName.localeCompare(this.data[i].name, 'en', { sensitivity: 'base' }) == 0) {
-        brand = this.data[i];
-        break;
+    var brand = '';
+    if (brandName) {
+      for (var i = 0; i < this.data.length; i++) {
+        if (brandName.localeCompare(this.data[i].name, 'en', {sensitivity: 'base'}) == 0) {
+          brand = this.data[i];
+          break;
+        }
       }
     }
     return brand;

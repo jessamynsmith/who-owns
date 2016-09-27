@@ -16,13 +16,13 @@
 
   <br>
 
-  <ion-card>
+  <ion-card *ngIf="brandName">
     <ion-card-content>
       <p class="bigger">
         <span *ngIf="brandInfo">
           {{brandInfo.name}} is owned by <span class="darker">{{brandInfo.owner}}</span>
         </span>
-        <span *ngIf="brandName && !brandInfo">
+        <span *ngIf="!brandInfo">
           Brand not found
         </span>
       </p>
