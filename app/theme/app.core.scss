@@ -6,9 +6,28 @@
 // These are the imports which make up the design of this app.
 // By default each design mode includes these shared imports.
 // App Shared Sass variables belong in app.variables.scss.
-
-@import "../pages/about/about";
-
-@import "../pages/contact/contact";
-
 @import "../pages/home/home";
+
+.toolbar-title {
+  color: map-get($colors, primary);
+}
+
+.item-input ion-label,
+.item-select ion-label,
+.item-datetime ion-label {
+  color: map-get($colors, dark);
+}
+
+.text-input {
+  font-size: 2.0rem;
+}
+
+.toolbar-title, .bigger {
+  font-weight: 600;
+  font-size: 2.0rem;
+}
+
+.wide {
+  padding-left: 14px;
+  padding-right: 14px;
+}
