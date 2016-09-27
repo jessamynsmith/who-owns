@@ -39,6 +39,7 @@ export class BrandData {
       {name: "PURE LIFE", owner: "Nestlé"},
       {name: "Ricore", owner: "Nestlé"},
       {name: "Ricoffy", owner: "Nestlé"},
+      {name: "San Pellegrino", owner: "Nestlé"},
       {name: "S. Pellegrino", owner: "Nestlé"},
       {name: "Santa Maria", owner: "Nestlé"},
       {name: "Vera", owner: "Nestlé"},
