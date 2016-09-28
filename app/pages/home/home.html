@@ -4,24 +4,32 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">
+<ion-content padding class="home light-background">
 
   <ion-grid>
     <ion-row>
-      <ion-col width-20><ion-label class="darker pull-right">Who owns</ion-label></ion-col>
-      <ion-col width-70>
-        <ng2-completer [(ngModel)]="brandName" [dataService]="dataService" [overrideSuggested]="true"
-                 [minSearchLength]="0" [clearSelected]="true" (selected)="checkBrand()"></ng2-completer>
+      <ion-col>
+        <ion-label class="darker margin-label">Who owns</ion-label>
       </ion-col>
-      <ion-col width-10>
-        <button class="wide darker" (click)="checkBrand()">?</button>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ng2-completer [(ngModel)]="brandName" [dataService]="dataService"
+                       [overrideSuggested]="true"
+                       [minSearchLength]="0" [clearSelected]="true"
+                       (selected)="checkBrand()"></ng2-completer>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button class="wide darker margin-label pull-right" (click)="checkBrand()">?</button>
       </ion-col>
     </ion-row>
   </ion-grid>
 
   <br>
 
-  <ion-card *ngIf="brandName">
+  <ion-card *ngIf="brandName" class="margin-card">
     <ion-card-content>
       <p class="bigger">
         <span *ngIf="brandInfo">
