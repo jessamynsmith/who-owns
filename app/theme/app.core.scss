@@ -6,22 +6,22 @@
 // App Shared Sass variables belong in app.variables.scss.
 @import "../pages/home/home";
 
-.text-input {
-  border: 1px #dddddd solid;
-  padding-bottom: 3px;
+
+.completer-holder, .completer-input {
+  width: 100%;
+  height: 100%;
+  font-size: 2.0rem;
+}
+
+.completer-holder {
+  padding: 3px 5px 7px 5px;
 }
 
 .toolbar-title {
   color: map-get($colors, primary);
 }
 
-.item-input ion-label,
-.item-select ion-label,
-.item-datetime ion-label {
-  color: map-get($colors, dark);
-}
-
-.text-input, .bigger {
+.bigger {
   font-size: 2.0rem;
 }
 
