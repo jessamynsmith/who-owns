@@ -33,7 +33,7 @@
     "run-sequence": "1.1.5"
   },
   "scripts": {
-    "postinstall": "gulp build"
+    "postinstall": "gulp build --release"
   },
   "cordovaPlugins": [
     "cordova-plugin-device",
