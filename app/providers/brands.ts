@@ -9,6 +9,7 @@ export class BrandData {
 
   constructor() {
     this.data = [
+      // Nestlé
       {name: "Aberfoyle", owner: 0},
       {name: "Acqua Panna", owner: 0},
       {name: "Al Manhal", owner: 0},
@@ -328,6 +329,7 @@ export class BrandData {
       {name: "Drumstick", owner: 0},
       {name: "Ovaltine", owner: 0, notes: "In the USA"},
 
+      // Unilever
       {name: "Axe", owner: 1},
       {name: "Lynx", owner: 1},
       {name: "Blue Band", owner: 1},
@@ -355,6 +357,7 @@ export class BrandData {
       {name: "Popsicle", owner: 1},
       {name: "Fudgsicle", owner: 1},
 
+      // Pepsico
       {name: "Pepsi", owner: 2},
       {name: "Mountain Dew", owner: 2},
       {name: "Lay's", owner: 2},
@@ -391,8 +394,10 @@ export class BrandData {
       {name: "Pasta Roni", owner: 2},
       {name: "Near East", owner: 2},
 
+      // Coca-Cola
       {name: "Coke", owner: 3},
       {name: "Minute Maid", owner: 3},
+      {name: "Sprite", owner: 3},
       {name: "Dasani", owner: 3},
       {name: "Powerade", owner: 3},
       {name: "Dr Pepper", owner: 3},
