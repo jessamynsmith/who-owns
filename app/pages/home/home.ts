@@ -13,11 +13,13 @@ export class HomePage {
   brandName: any;
   brandInfo: any;
   brandData: any;
+  owners: any;
   private dataService: CompleterData;
 
   constructor(public navCtrl: NavController, private completerService: CompleterService,
               brandData: BrandData) {
     this.brandData = brandData;
+    this.owners = this.brandData.getOwners().join(", ");
     this.dataService = completerService.local(this.brandData.data, 'name', 'name');
   }
 

@@ -426,6 +426,10 @@ export class BrandData {
 
   }
 
+  getOwners() {
+    return this.owners.map(function(owner){ return owner.name });
+  }
+
   getOwner(brandName) {
     if (brandName) {
       for (var i = 0; i < this.data.length; i++) {

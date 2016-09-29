@@ -34,8 +34,9 @@
           </span>
         </span>
         <span *ngIf="!brandInfo">
-          Brand not found
+          Brand not found. May not be owned by: {{ owners }}.
         </span>
+        <!-- TODO add redirect to google search if not found -->
       </p>
     </ion-card-content>
   </ion-card>
