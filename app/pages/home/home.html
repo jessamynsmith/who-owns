@@ -27,7 +27,11 @@
     <ion-card-content>
       <p class="bigger">
         <span *ngIf="brandInfo">
-          {{brandInfo.name}} is owned by <span class="darker">{{brandInfo.owner}}</span>
+          {{brandInfo.name}} is owned by <span class="darker">{{brandInfo.owner.name}}</span>
+          <span *ngIf="brandInfo.notes">
+            <br>
+            *{{brandInfo.notes}}
+          </span>
         </span>
         <span *ngIf="!brandInfo">
           Brand not found
