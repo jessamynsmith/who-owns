@@ -18,11 +18,52 @@
     }
   </script>-->
 
+  <style type="text/css">
+    @keyframes flickerAnimation {
+      0%   { opacity:1; }
+      50%  { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-o-keyframes flickerAnimation{
+      0%   { opacity:1; }
+      50%  { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-moz-keyframes flickerAnimation{
+      0%   { opacity:1; }
+      50%  { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-webkit-keyframes flickerAnimation{
+      0%   { opacity:1; }
+      50%  { opacity:0; }
+      100% { opacity:1; }
+    }
+    .animate-flicker {
+       -webkit-animation: flickerAnimation 1.5s infinite;
+       -moz-animation: flickerAnimation 2s infinite;
+       -o-animation: flickerAnimation 2s infinite;
+        animation: flickerAnimation 2s infinite;
+    }
+    .loading {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      margin-top: 20%;
+      vertical-align: center;
+      font-size: 36px;
+    }
+  </style>
+
   <link ios-href="build/css/app.ios.css" rel="stylesheet">
   <link md-href="build/css/app.md.css" rel="stylesheet">
   <link wp-href="build/css/app.wp.css" rel="stylesheet">
 </head>
 <body>
+
+<div class="animate-flicker loading">
+  Loading...
+</div>
 
   <!-- This is Ionic's root component, where the app will load -->
   <ion-app></ion-app>
